@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input1" type="text" />
+
+    <input id="input2" type="text" />
+
+    <input id="input3" type="text" />
+    <p id="texto"></p>
+    <button onclick="verificar();">Verificar</button>
+    <br />
+    <a href="./index.html">Ejercicio 1</a>
+    <a href="./index2.html">Ejercicio 2</a>
+    <a href="./index3.html">Ejercicio 3</a>
+    <script>
+      function verificar() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var input3 = document.getElementById("input3").value;
+        var total = Number(input1) + Number(input2) + Number(input3);
+        console.log(total);
+        if (total > 10) {
+          document.getElementById("texto").innerHTML =
+            "llevas demasiados stickers";
+        } else {
+          document.getElementById("texto").innerHTML = "llevas" + total;
+        }
+      }
+    </script>
+  </body>
+</html>

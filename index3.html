@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="" id="opcion1">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <select name="" id="opcion2">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <select name="" id="opcion3">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <button onclick="ingresar()">Ingresar</button>
+    <p id="texto"></p>
+    <br />
+    <a href="./index.html">Ejercicio 1</a>
+    <a href="./index2.html">Ejercicio 2</a>
+    <a href="./index3.html">Ejercicio 3</a>
+    <script>
+      function ingresar() {
+        var option1 = Number(document.getElementById("opcion1").value);
+        var option2 = Number(document.getElementById("opcion2").value);
+        var option3 = Number(document.getElementById("opcion3").value);
+        var inputtexto = document.getElementById("texto");
+        if ((option1 == 9) & (option2 == 1) & (option3 == 1)) {
+          inputtexto.innerHTML = "pasword 1 es correcto";
+        } else if ((option1 == 7) & (option2 == 1) & (option3 == 4)) {
+          inputtexto.innerHTML = "pasword 2 es correcto";
+        } else {
+          inputtexto.innerHTML = "error";
+        }
+      }
+    </script>
+  </body>
+</html>

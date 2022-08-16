@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      id="imagen"
+      onclick="cambiaColor();"
+      src="./assets/imgs/1519855918965.jpg"
+      alt=""
+    />
+    <br />
+    <a href="./index.html">Ejercicio 1</a>
+    <a href="./index2.html">Ejercicio 2</a>
+    <a href="./index3.html">Ejercicio 3</a>
+    <script>
+      var estado = false;
+      function cambiaColor() {
+        var img = document.getElementById("imagen");
+        console.log(estado);
+        if (estado == false) {
+          img.style.border = "2px solid red";
+          estado = true;
+        } else {
+          img.style.border = "0px";
+          estado = false;
+        }
+      }
+    </script>
+  </body>
+</html>
